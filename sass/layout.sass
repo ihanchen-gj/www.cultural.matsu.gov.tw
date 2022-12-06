@@ -1,0 +1,26 @@
+// 重置
+@import "bootstrap/normalize"
+
+// 只引用bootstrap格線部份，其他設計重新安排
+
+// iconFont
+@import _glyphicons
+
+// 核心變數+混合設定
+@import _variables
+@import _minxins
+
+// 互動視窗 @import _modals
+body
+	background: $CIScolorD
+
+@keyframes fixedNavDown
+	0%
+		top: -100px
+	20%
+		top: 0
+
+#lsdv
+	+linearGradient(linear-gradient(to bottom, white 340px, $CIScolorD 340px))
+	// 共用
+	@import _scaffolding

@@ -1,0 +1,97 @@
+@mixin fontT($line-height: 1.2em)
+	font: $font-size $font-family
+	line-height: $line-height
+
+@mixin fontT-lg($line-height-lg: 1.6em)
+	font: $font-size-lg $font-family
+	line-height: $line-height-lg
+
+@mixin fontT-md($line-height-md: 1em)
+	font: $font-size-md $font-family
+	line-height: $line-height-md
+
+@mixin fontT-sm($line-height-sm: 1.2em)
+	font: $font-size-sm $font-family
+	line-height: $line-height-sm
+
+@mixin fontT-xs($line-height-xs: 1.5em)
+	font: $font-size-xs $font-family
+	line-height: $line-height-xs
+
+//margin, padding 設定
+@mixin distanceMP($margin: 0px, $padding: 0px)
+	margin: $margin
+	padding: $padding
+//Chrome+Safari, Firefox, IE, Opera
+@mixin box-shadow($box-shadow)
+	// -webkit-box-shadow: $box-shadow
+	// -moz-box-shadow: $box-shadow
+	// -ms-box-shadow: $box-shadow
+	// -o-box-shadow: $box-shadow
+	box-shadow: $box-shadow
+
+@mixin transform($transform)
+	// -webkit-transform: $transform
+	// -moz-transform: $transform
+	// -ms-transform: $transform
+	// -o-transform: $transform
+	transform: $transform
+
+@mixin transform-origin($transform-origin)
+	// -webkit-transform-origin: $transform-origin
+	// -moz-transform-origin: $transform-origin
+	// -ms-transform-origin: $transform-origin
+	// -o-transform-origin: $transform-origin
+	transform-origin: $transform-origin
+
+@mixin transition($transition)
+	// -webkit-transition: $transition
+	// -moz-transition: $transition
+	// -ms-transition: $transition
+	// -o-transition: $transition
+	transition: $transition
+
+@mixin animation($animation)
+	animation: $animation
+
+@mixin linearGradient($linearGradient)
+	// background: -webkit-$linearGradient
+	// background: -moz-$linearGradient
+	// background: -ms-$linearGradient
+	// background: -o-$linearGradient
+	background: $linearGradient
+	-pie-background: $linearGradient
+	behavior: url(/pie/PIE.htc)
+
+// input 提示字
+@mixin input-placeholder($input-placeholder-color: lighten($BLACKcolor, 50%))
+	&::-webkit-input-placeholder
+		color: $input-placeholder-color
+	&::-moz-input-placeholder
+		color: $input-placeholder-color
+	&::-ms-input-placeholder
+		color: $input-placeholder-color
+	&::-o-input-placeholder
+		color: $input-placeholder-color
+	&::input-placeholder
+		color: $input-placeholder-color
+	input
+		&:focus
+			&::-webkit-input-placeholder
+				opacity: 0.5
+			&::-moz-input-placeholder
+				opacity: 0.5
+			&::-ms-input-placeholder
+				opacity: 0.5
+			&::-o-input-placeholder
+				opacity: 0.5
+			&::input-placeholder
+				opacity: 0.5
+
+@mixin text-overflow($height)
+	height: $height
+	overflow: hidden
+	text-overflow: ellipsis
+	display: -webkit-box
+	-webkit-line-clamp: 2
+	-webkit-box-orient: vertical

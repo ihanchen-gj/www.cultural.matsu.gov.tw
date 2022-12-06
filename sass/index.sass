@@ -1,0 +1,45 @@
+// 核心變數+混合設定
+@import _variables
+@import _minxins
+
+.weblink
+  margin-bottom: 16px
+  padding: 0 12px
+  border-radius: 0 0 16px 16px
+  text-decoration: none
+  &-inner
+    border-radius: 16px
+    overflow: hidden
+    background: darken($WHITEcolor, 0%)
+  &-txt
+    position: relative
+    top: -16px
+    padding: 24px 16px 0
+    background: darken($WHITEcolor, 0%)
+    border-radius: 16px 16px 0 0
+  &-title
+    margin-bottom: 8px
+    font-size: $font-size-lg
+    font-weight: 600
+    color: darken($WHITEcolor, 67%)
+  &-subtitle
+    font-size: $font-size
+    color: darken($WHITEcolor, 29.5%)
+    letter-spacing: 0.5em
+    font-weight: 400
+    font-family: $font-family
+  &-cont
+    margin: 8px 0 24px
+    font-size: $font-size
+    color: darken($WHITEcolor, 51%)
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: 4
+    -webkit-box-orient: vertical
+    overflow: hidden
+  &-more
+    font-size: $font-size
+    color: $CIScolorA
+    font-family: $font-family
+  &:hover &-more
+    text-decoration: underline

@@ -1,0 +1,49 @@
+.weblink {
+  margin-bottom: 16px;
+  padding: 0 12px;
+  border-radius: 0 0 16px 16px;
+  text-decoration: none;
+}
+.weblink-inner {
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+}
+.weblink-txt {
+  position: relative;
+  top: -16px;
+  padding: 24px 16px 0;
+  background: white;
+  border-radius: 16px 16px 0 0;
+}
+.weblink-title {
+  margin-bottom: 8px;
+  font-size: 1.7em;
+  font-weight: 600;
+  color: #545454;
+}
+.weblink-subtitle {
+  font-size: 1em;
+  color: #b4b4b4;
+  letter-spacing: 0.5em;
+  font-weight: 400;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.weblink-cont {
+  margin: 8px 0 24px;
+  font-size: 1em;
+  color: #7d7d7d;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.weblink-more {
+  font-size: 1em;
+  color: #1e8891;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.weblink:hover .weblink-more {
+  text-decoration: underline;
+}/*# sourceMappingURL=index.css.map */
