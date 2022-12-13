@@ -282,11 +282,6 @@ body {
     top: 0;
   }
 }
-#lsdv {
-  background: linear-gradient(to bottom, white 340px, #fdf5f0 340px);
-  -pie-background: linear-gradient(to bottom, white 340px, #fdf5f0 340px);
-  behavior: url(/pie/PIE.htc);
-}
 #lsdv .setEnd {
   padding: 80px 15px 0;
   min-height: calc(100% - 200px);
@@ -391,4 +386,11 @@ body {
 #lsdv mark {
   color: #fa3434;
   background: white;
+}
+@media (min-width: 1200px) {
+  #lsdv {
+    background: linear-gradient(to bottom, white 322px, #fdf5f0 322px);
+    -pie-background: linear-gradient(to bottom, white 322px, #fdf5f0 322px);
+    behavior: url(/pie/PIE.htc);
+  }
 }/*# sourceMappingURL=layout.css.map */

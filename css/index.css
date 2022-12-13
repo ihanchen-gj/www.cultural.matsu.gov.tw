@@ -1,3 +1,81 @@
+#lsdv .header {
+  padding-top: 80px;
+  background: linear-gradient(to bottom, white 70%, #fdf5f0 70%);
+  -pie-background: linear-gradient(to bottom, white 70%, #fdf5f0 70%);
+  behavior: url(/pie/PIE.htc);
+}
+@media (min-width: 768px) {
+  #lsdv .header {
+    background: linear-gradient(to bottom, white 66.6666666667%, #fdf5f0 66.6666666667%);
+    -pie-background: linear-gradient(to bottom, white 66.6666666667%, #fdf5f0 66.6666666667%);
+    behavior: url(/pie/PIE.htc);
+    padding-top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  #lsdv .header {
+    padding-top: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  #lsdv .header {
+    padding-top: 50px;
+    background: none;
+  }
+}
+#lsdv .header-title {
+  position: absolute;
+  top: 12px;
+  padding-left: 12px;
+}
+@media (min-width: 992px) {
+  #lsdv .header-title {
+    top: 50px;
+  }
+}
+#lsdv .header-title-img {
+  width: 60%;
+}
+@media (min-width: 768px) {
+  #lsdv .header-title-img {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  #lsdv .header-title-img {
+    width: inherit;
+  }
+}
+#lsdv .header-bg {
+  padding: 0 12px;
+}
+@media (min-width: 992px) {
+  #lsdv .header-bg-img {
+    width: 100%;
+  }
+}
+#lsdv .title {
+  padding: 12px 0 33px;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  font-weight: 600;
+  color: #545454;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #lsdv .title {
+    position: relative;
+    top: -15px;
+    padding: 0;
+  }
+}
+#lsdv .title small {
+  display: block;
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 0.3em;
+  color: #7d7d7d;
+}
+
 .weblink {
   margin-bottom: 16px;
   padding: 0 12px;
@@ -12,22 +90,37 @@
 .weblink-txt {
   position: relative;
   top: -16px;
-  padding: 24px 16px 0;
+  padding: 16px 12px 0;
   background: white;
   border-radius: 16px 16px 0 0;
 }
+@media (min-width: 992px) {
+  .weblink-txt {
+    padding: 24px 16px 0;
+  }
+}
 .weblink-title {
-  margin-bottom: 8px;
-  font-size: 1.7em;
+  margin-bottom: 4px;
+  font-size: 1.15em;
   font-weight: 600;
   color: #545454;
+}
+@media (min-width: 992px) {
+  .weblink-title {
+    margin-bottom: 8px;
+    font-size: 1.7em;
+  }
 }
 .weblink-subtitle {
   font-size: 1em;
   color: #b4b4b4;
-  letter-spacing: 0.5em;
   font-weight: 400;
   font-family: "Noto Sans TC", sans-serif;
+}
+@media (min-width: 992px) {
+  .weblink-subtitle {
+    letter-spacing: 0.5em;
+  }
 }
 .weblink-cont {
   margin: 8px 0 24px;

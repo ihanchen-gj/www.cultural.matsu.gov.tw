@@ -21,6 +21,8 @@ body
 		top: 0
 
 #lsdv
-	+linearGradient(linear-gradient(to bottom, white 340px, $CIScolorD 340px))
 	// 共用
 	@import _scaffolding
+
+	@media (min-width: $screen-lg)
+		+linearGradient(linear-gradient(to bottom, white 322px, $CIScolorD 322px))
